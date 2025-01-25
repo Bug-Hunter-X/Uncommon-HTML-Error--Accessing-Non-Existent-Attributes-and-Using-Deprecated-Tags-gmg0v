@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Attempting to access a non-existent attribute
+    let attributeValue = document.getElementById('myDiv').getAttribute('nonExistent');
+    console.log(attributeValue); // Logs null, but might cause unexpected behavior
+    
+    // Using a tag that is not supported by all browsers
+    // Example using the <blink> tag which is deprecated and not supported by many modern browsers
+    // <blink>This text will blink (maybe)</blink>
+  </script>
+</body>
+</html>
