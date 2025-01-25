@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv" data-custom="customValue">
+    This is some text.
+  </div>
+
+  <script>
+    // Properly accessing a custom attribute
+    let attributeValue = document.getElementById('myDiv').getAttribute('data-custom');
+    console.log(attributeValue); // Logs "customValue"
+    
+    // Using a modern approach instead of deprecated tags
+    // Example using CSS to create a blinking effect if needed
+    const div = document.getElementById('myDiv');
+    div.style.animation = 'blinker 1s linear infinite';
+    
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+  </script>
+</body>
+</html>
